@@ -14,8 +14,9 @@ class MainScreen extends StatelessWidget {
           'Gunung Jawa Timur',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
+        centerTitle: true,
       ),
-      backgroundColor: Colors.green[100],
+      backgroundColor: Colors.green[50],
       body: ListView.builder(
         itemBuilder: (context, index) {
           final TourismPlace place = tourismPlaceList[index];
@@ -65,6 +66,7 @@ class MainScreen extends StatelessWidget {
                     Text(
                       place.name,
                       style: const TextStyle(
+                        fontWeight: FontWeight.bold,
                         fontSize: 16.0,
                       ),
                     ),

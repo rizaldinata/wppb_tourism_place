@@ -1,6 +1,7 @@
 class TourismPlace {
   String name;
   String location;
+  String hariBuka;
   String jamBuka;
   String hargaTiket;
   String imageAsset;
@@ -9,6 +10,7 @@ class TourismPlace {
   TourismPlace({
     required this.name,
     required this.location,
+    required this.hariBuka,
     required this.jamBuka,
     required this.hargaTiket,
     required this.imageAsset,
@@ -20,6 +22,7 @@ var tourismPlaceList = [
   TourismPlace(
     name: 'Gunung Argopuro',
     location: 'Probolinggo, Jawa Timur',
+    hariBuka: 'Senin - Minggu',
     jamBuka: '24 Jam',
     hargaTiket: 'Rp 22.500',
     imageAsset: 'assets/images/argopuro.jpg',
@@ -29,6 +32,7 @@ var tourismPlaceList = [
   TourismPlace(
     name: 'Gunung Arjuno',
     location: 'Pasuruan, Jawa Timur',
+    hariBuka: 'Senin - Minggu',
     jamBuka: '24 Jam',
     hargaTiket: 'Rp 15.000',
     imageAsset: 'assets/images/arjuno.jpg',
@@ -38,6 +42,7 @@ var tourismPlaceList = [
   TourismPlace(
     name: 'Gunung Lawu',
     location: 'Magetan, Jawa Timur',
+    hariBuka: 'Senin - Minggu',
     jamBuka: '24 Jam',
     hargaTiket: 'Rp 20.000',
     imageAsset: 'assets/images/lawu.jpg',
@@ -47,6 +52,7 @@ var tourismPlaceList = [
   TourismPlace(
     name: 'Gunung Raung',
     location: 'Bondowoso, Jawa Timur',
+    hariBuka: 'Senin - Minggu',
     jamBuka: '24 Jam',
     hargaTiket: 'Rp 25.000',
     imageAsset: 'assets/images/raung.jpg',
@@ -56,6 +62,7 @@ var tourismPlaceList = [
   TourismPlace(
     name: 'Gunung Semeru',
     location: 'Lumajang, Jawa Timur',
+    hariBuka: 'Senin - Minggu',
     jamBuka: '24 Jam',
     hargaTiket: 'Rp 29.000',
     imageAsset: 'assets/images/semeru.jpg',

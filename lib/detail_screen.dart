@@ -9,7 +9,17 @@ class DetailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green[100],
+      backgroundColor: Colors.green[50],
+      appBar: AppBar(
+        backgroundColor: Colors.green[400],
+        title: Text(
+          place.name,
+          style: const TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
@@ -43,7 +53,7 @@ class DetailScreen extends StatelessWidget {
                     Column(
                       children: [
                         const Icon(Icons.calendar_today),
-                        const Text('Open Everyday'),
+                        Text(place.hariBuka),
                       ],
                     ),
                     Column(
@@ -67,7 +77,7 @@ class DetailScreen extends StatelessWidget {
                 padding: const EdgeInsets.all(16.0),
                 child: Text(
                   place.description,
-                  textAlign: TextAlign.center,
+                  textAlign: TextAlign.justify,
                   style: const TextStyle(
                     fontSize: 16.0,
                   ),
